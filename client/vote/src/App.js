@@ -462,12 +462,10 @@ function App() {
           Connecté : {contractInfo.accounts && contractInfo.accounts[0]}
         </div>
         {contractInfo.isOwner && <div>Administrateur</div>}
-        {voter.isRegistered && <div>Not Registered</div>}
 
-        <div className="flex flex-row">
-          {renderWorklfowStatus()}
-          {renderWorkflowButtons()}
-        </div>
+        {renderWorklfowStatus()}
+        {renderWorkflowButtons()}
+
         {renderVoterRegistration()}
         {renderProposalsRegistration()}
         {renderVotingSession()}
